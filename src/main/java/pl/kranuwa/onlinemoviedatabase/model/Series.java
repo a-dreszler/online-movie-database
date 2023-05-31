@@ -77,7 +77,12 @@ public class Series {
 
     @Override
     public String toString() {
-        return title + ", liczba sezonów: " + seasons + ", liczba odcinków: " + episodes + ", reżyser: " + producer +
-                ", gatunek: " + genre + ", opis: " + description + ", ocena: " + rating;
+        return title +
+                ", number of seasons: " + seasons +
+                ", number of episodes: " + episodes +
+                ", director: " + producer +
+                ", genre: " + genre +
+                ", description: " + description +
+                ", rating: " + rating;
     }
 }

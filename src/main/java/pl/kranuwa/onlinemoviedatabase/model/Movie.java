@@ -1,15 +1,15 @@
 package pl.kranuwa.onlinemoviedatabase.model;
 
 public class Movie {
-    private String name;
+    private String title;
     private String producer;
     private int yearOfProduction;
     private String genre;
     private String description;
     private double rating;
 
-    public Movie(String name, String producer, int yearOfProduction, String genre, String description, double rating) {
-        this.name = name;
+    public Movie(String title, String producer, int yearOfProduction, String genre, String description, double rating) {
+        this.title = title;
         this.producer = producer;
         this.yearOfProduction = yearOfProduction;
         this.genre = genre;
@@ -17,12 +17,12 @@ public class Movie {
         this.rating = rating;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getProducer() {
@@ -67,7 +67,11 @@ public class Movie {
 
     @Override
     public String toString() {
-        return name + ", reżyser: " + producer + ", rok produkcji: " + yearOfProduction + ", gatunek: " + genre +
-                ", opis: " + description + ", ocena: " + rating;
+        return title +
+                ", director: " + producer +
+                ", year of production: " + yearOfProduction +
+                ", genre: " + genre +
+                ", description: " + description +
+                ", rating: " + rating;
     }
 }
